@@ -1,0 +1,11 @@
+.card {
+    margin: 10px;
+    width: 22em;
+    background-color: aqua;
+}
+.link {
+    font-size: 1em;
+    text-decoration: none;
+    color: rgb(35, 11, 11);
+    font-weight: 600;
+}

@@ -1,0 +1,6 @@
+.heading {
+    margin-top: 2em;
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+}
