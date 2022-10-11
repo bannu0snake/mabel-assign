@@ -1,14 +1,23 @@
 import Carousel from "react-bootstrap/Carousel";
 import { Button } from "react-bootstrap";
 import classes from "../styles/HomePage.module.css";
+import { useRouter } from "next/router";
 function HomePage({ items }) {
+    const router = useRouter();
+    const onClickHandler = (id) => {
+        router.push(`/cocktail/${id}`);
+    };
     return (
         <>
             {/* <Button variant="primary">Primary</Button>{" "} */}
             <Carousel className={classes.carousel}>
                 {items.map((item) => {
                     return (
-                        <Carousel.Item>
+                        <Carousel.Item
+                            onClick={() => {
+                                onClickHandler(item.idDrink);
+                            }}
+                        >
                             <img
                                 className={`d-block w-100 ${classes.img}`}
                                 src={item.strDrinkThumb}
