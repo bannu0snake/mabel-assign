@@ -1,10 +1,8 @@
 import Head from "next/head";
-// import Image from "next/image";
 import axios from "axios";
 import HomePage from "../components/HomePage";
 import HorizotalScroll from "../components/HorizotalScroll";
 import classes from "../styles/index.module.css";
-import { Button } from "react-bootstrap";
 import Link from "next/link";
 export default function Home({
     CarosalItems,
@@ -98,10 +96,6 @@ export const getStaticProps = async () => {
         "http://www.thecocktaildb.com/api/json/v1/1/list.php?a=list"
     );
     const categories = res8.data.drinks;
-    // console.log(CarosalItems);
-    // console.log(alcoholicItems);
-    // console.log(nonAlcoholicItems);
-    // console.log(categories);
     return {
         props: {
             CarosalItems,

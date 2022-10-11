@@ -2,7 +2,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CardItem from "./Card";
-import classes from "../styles/AllItems.module.css";
 function AllItems({ items }) {
     return (
         <Container>

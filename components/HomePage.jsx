@@ -1,5 +1,4 @@
 import Carousel from "react-bootstrap/Carousel";
-import { Button } from "react-bootstrap";
 import classes from "../styles/HomePage.module.css";
 import { useRouter } from "next/router";
 function HomePage({ items }) {
@@ -9,7 +8,6 @@ function HomePage({ items }) {
     };
     return (
         <>
-            {/* <Button variant="primary">Primary</Button>{" "} */}
             <Carousel className={classes.carousel}>
                 {items.map((item) => {
                     return (

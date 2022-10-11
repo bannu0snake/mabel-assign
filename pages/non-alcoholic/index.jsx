@@ -20,7 +20,6 @@ export const getStaticProps = async () => {
     const res = await axios.get(
         "http://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic"
     );
-    // console.log(res.data);
     return {
         props: {
             items: res.data.drinks,

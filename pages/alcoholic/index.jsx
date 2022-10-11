@@ -12,7 +12,6 @@ const index = ({ items }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={classes.title}>Alcoholic</div>
-            {/* <List items={items} /> */}
             <AllItems items={items} />
         </>
     );

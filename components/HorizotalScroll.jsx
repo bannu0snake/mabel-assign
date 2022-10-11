@@ -9,7 +9,7 @@ function HorizotalScroll(props) {
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
             {items.map(({ idDrink, strDrink, strDrinkThumb }) => (
                 <CardItem
-                    itemId={idDrink} // NOTE: itemId is required for track items
+                    itemId={idDrink}
                     title={strDrink}
                     key={idDrink}
                     image={strDrinkThumb}
